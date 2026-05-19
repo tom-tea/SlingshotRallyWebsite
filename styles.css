@@ -461,10 +461,12 @@ button {
 @media (max-width: 700px){
     #hero h1 {
         font-size: 10vw;
+        margin-bottom: -15px;
     }
     #hero p {
         font-size: 4vw;
         width: 90%;
+        margin-bottom: -10px;
     }
     #hero-buttons {
         width: 100%;
@@ -510,7 +512,7 @@ button {
 
     #hero label {
         transform: scale(0.9);
-        margin-top: -75px;
+        margin-top: -55% !important;
         margin-bottom: 10px;        
     }
 
