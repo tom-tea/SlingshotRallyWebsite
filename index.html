@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slingshot Rally</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" type="image/png" href="img/testlogo1.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nabla&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="devlog-popup" onclick="window.open('https://www.youtube.com/@Danidev')">
+        <img src="img/youtubeicon.png">
+        <label>DEVLOGS</label>
+    </button>
+
+    <div id="navbar">
+        <div id="nav-title"><h1>Slingshot Rally</h1></div>
+        <div id="nav-links">
+            <button id="home-link" onclick='var element = document.getElementById("hero");
+element.scrollIntoView();'>About <div class="underline"></div></button>
+            <button id="gallery-link" onclick='var element = document.getElementById("gallery-anchor");
+element.scrollIntoView();'>Gallery <div class="underline"></div></button>
+            <button id="gamemodes-link" onclick='var element = document.getElementById("gamemode-anchor");
+element.scrollIntoView();'>Game Modes <div class="underline"></div></button>
+            <button id="faq-link" onclick='var element = document.getElementById("faq");
+element.scrollIntoView();'>FAQ <div class="underline"></div></button>
+            <button class="play-now-btn" onclick='var element = document.getElementById("steam-page-anchor");
+element.scrollIntoView();'>View on Steam</button>    
+        </div>
+    </div>
+    <div id="content">
+        <div id="hero-background"></div>
+        <div id="hero">
+            <label>Rally Racing but add Slingshots</label>
+            <h1>SLINGSHOT RALLY</h1>
+            <p>Slingshot Rally is an Indie Rally Stunt Racing Game. It features multiple Game Modes and Terrains.</p>
+            <div id="hero-buttons">
+                <button class="play-now-btn" onclick='var element = document.getElementById("steam-page-anchor");
+element.scrollIntoView();'>View on Steam</button>
+                <button id="learn-more-hero" onclick='var element = document.getElementById("gallery-anchor");
+element.scrollIntoView();'>Learn More</button>
+            </div>
+        </div>
+
+        <div id="gallery">
+            <div id="gallery-anchor" style="position: relative; top:-100px;"></div>
+            <div id="gallery-blob"></div>
+            <h1>Gallery</h1>
+            <div id="gallery-grid" class="stagger-container">
+                <div class="gallery-item stagger-item" style="background-image: url('img/Screenshot 2026-05-19 141603.png');"></div> 
+                <div class="gallery-item stagger-item" style="background-image: url('img/Screenshot 2026-05-19 141703.png');"></div> 
+                <div class="gallery-item stagger-item" style="background-image: url('img/Screenshot 2026-05-19 141805.png');"></div> 
+                <div class="gallery-item stagger-item" style="background-image: url('img/Screenshot 2026-05-19 141908.png');"></div> 
+                <div class="gallery-item stagger-item" style="background-image: url('img/Screenshot 2026-05-19 142104.png');"></div> 
+                <div class="gallery-item stagger-item" style="background-image: url('img/Screenshot 2026-05-19 142145.png');"></div>           
+            </div>
+        </div>
+
+        <div id="gamemodes">
+            <div id="gamemode-anchor" style="position: relative; top:-150px;"></div>
+            <h1>Game Modes</h1>
+            <div id="gamemode-grid" class="stagger-container">
+                <div class="gamemode stagger-item">
+                    <div class="gamemode-image" style="background-image: url('img/Screenshot 2026-05-19 170149.png'); background-size: cover; background-position: center; width: 100%; height: 100%;"> </div>
+                    <div class="gamemode-description">
+                        <h2>Time Trial</h2>
+                        <label>Test your skills against the clock in this intense time trial mode!</label>
+                    </div>
+                </div>
+                <div class="gamemode stagger-item">
+                    <div class="gamemode-image" style="background-image: url('img/Screenshot 2026-05-19 165709.png'); background-size: cover; background-position: center; width: 100%; height: 100%;"> </div>
+                    <div class="gamemode-description">
+                        <h2>Race</h2>
+                        <label>Compete against up to 5 other players in exciting races!</label>
+                    </div>
+                </div>
+                <div class="gamemode stagger-item">
+                    <div class="gamemode-image" style="background-image: url('img/Screenshot 2026-05-19 141908.png'); background-size: cover; background-position: center; width: 100%; height: 100%;"> </div>
+                    <div class="gamemode-description">
+                        <h2>Stunt</h2>
+                        <label>Perform incredible stunts and tricks in this unique game mode!</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="steam-page">
+            <div id="steam-page-anchor" style="position: relative; top:-250px;"></div>
+            <h1 id="wishlist-text">WISHLIST NOW!</h1>
+            <iframe src="https://store.steampowered.com/widget/1222680/" width="646" height="190" frameborder="0"></iframe>
+        </div>
+
+        <div id="faq">
+            <h1>FAQ</h1>
+            <div class="faq-item">
+                <h2>When is the release date?</h2>
+                <p>To be announced!</p>
+            </div>
+            <div class="faq-item">
+                <h2>What platforms will it be available on?</h2>
+                <p>Slingshot Rally will be available on PC via Steam and Itch.io at launch, currently with no potential plans for console releases in the future.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Will there be multiplayer?</h2>
+                <p>Yes! Slingshot Rally will feature online multiplayer modes, allowing you to compete against up to 5 friends.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
