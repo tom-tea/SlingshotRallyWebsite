@@ -125,6 +125,7 @@ button {
 }
 
 #hero h1 {
+  color: transparent;
   font-size: 3.75vw;
   background: -webkit-linear-gradient(45deg,#00eeff 0%, #92FE9D 50%,#00eeff 100%);
   -webkit-background-clip: text;
